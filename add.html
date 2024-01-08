@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label>
+            Name : <input id="name" type="text" maxlength="10" oninvalid="this.setCustomValidity('Ad mutleq doldurulmalidir')">
+            <p style="color: red; font-size: 12px; display: none;" id="errText">* Ad doldurulmalidir</p>
+        </label>
+        <label>
+            Surname : <input id="surname" type="text" required>
+        </label>
+        <button id="send" >Send</button>
+    </form>
+
+    <script src="./add.js"></script>
+</body>
+</html>
